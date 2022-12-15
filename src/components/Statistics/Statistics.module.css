@@ -1,0 +1,32 @@
+.list {
+  margin: 32px auto 0;
+  text-align: left;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+}
+
+.good {
+  composes: item;
+  background-color: green;
+}
+
+.neutral {
+  composes: item;
+  background-color: gray;
+}
+
+.bad {
+  composes: item;
+  background-color: red;
+}
